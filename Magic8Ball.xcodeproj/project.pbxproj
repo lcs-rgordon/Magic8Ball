@@ -105,18 +105,18 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		0EB316EB26F3D581001A2902 /* View */ = {
+		0EB316EB26F3D581001A2902 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				0E99BB0F26F381F40026CEB7 /* main.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0EB3172326F3D7AA001A2902 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				0EB316EB26F3D581001A2902 /* View */,
+				0EB316EB26F3D581001A2902 /* Views */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB3172A26F3D8F5001A2902 /* iOSApp.swift */,
-				0EB3172C26F3D8F5001A2902 /* ContentView.swift */,
+				0EB3173626F3EB4D001A2902 /* Views */,
 				0EB3172E26F3D8F7001A2902 /* Assets.xcassets */,
 				0EB3173026F3D8F7001A2902 /* Preview Content */,
 			);
@@ -138,6 +138,14 @@
 				0EB3173126F3D8F7001A2902 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0EB3173626F3EB4D001A2902 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EB3172C26F3D8F5001A2902 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
