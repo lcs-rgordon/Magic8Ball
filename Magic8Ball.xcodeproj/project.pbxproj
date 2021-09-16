@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E99BB1026F381F40026CEB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99BB0F26F381F40026CEB7 /* main.swift */; };
+		0EB316E326F3CA72001A2902 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB316E226F3CA72001A2902 /* Session.swift */; };
+		0EB316E526F3CA80001A2902 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB316E426F3CA80001A2902 /* Magic8Ball.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		0E99BB0C26F381F40026CEB7 /* Magic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Magic8Ball; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E99BB0F26F381F40026CEB7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0EB316E226F3CA72001A2902 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		0EB316E426F3CA80001A2902 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,19 @@
 		0E99BB0E26F381F40026CEB7 /* Magic8Ball */ = {
 			isa = PBXGroup;
 			children = (
+				0EB316E126F3CA67001A2902 /* Model */,
 				0E99BB0F26F381F40026CEB7 /* main.swift */,
 			);
 			path = Magic8Ball;
+			sourceTree = "<group>";
+		};
+		0EB316E126F3CA67001A2902 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EB316E226F3CA72001A2902 /* Session.swift */,
+				0EB316E426F3CA80001A2902 /* Magic8Ball.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB316E326F3CA72001A2902 /* Session.swift in Sources */,
 				0E99BB1026F381F40026CEB7 /* main.swift in Sources */,
+				0EB316E526F3CA80001A2902 /* Magic8Ball.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
