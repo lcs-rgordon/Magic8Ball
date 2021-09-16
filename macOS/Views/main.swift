@@ -16,7 +16,7 @@ print("============")
 
 // Ask for user's question
 print("""
-NOTE: Questions should be phrased such
+NOTE: Questions should be phrased in such
       that they can be answered with a
       yes or no response.
 
@@ -32,4 +32,5 @@ print("You said: \(input)")
 print("")
 
 // Show the advice
-print(advisor.provideResponseFor(givenQuery: input))
+let output = advisor.provideResponseFor(givenQuery: input
+print(output)

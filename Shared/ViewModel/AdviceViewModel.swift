@@ -7,10 +7,10 @@
 
 import Foundation
 
-class AdviceViewModel {
+class AdviceViewModel: ObservableObject {
     
     // A list of advice sessions
-    var sessions: [Session] = []
+    @Published var sessions: [Session] = []
     
     // Given a question, provide some advice
     func provideResponseFor(givenQuery: String) -> String {
