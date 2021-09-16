@@ -47,7 +47,8 @@
 		0E99BB0326F381F40026CEB7 = {
 			isa = PBXGroup;
 			children = (
-				0E99BB0E26F381F40026CEB7 /* Magic8Ball */,
+				0EB3172326F3D7AA001A2902 /* macOS */,
+				0E99BB0E26F381F40026CEB7 /* Shared */,
 				0E99BB0D26F381F40026CEB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,14 +61,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E99BB0E26F381F40026CEB7 /* Magic8Ball */ = {
+		0E99BB0E26F381F40026CEB7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				0EB316E126F3CA67001A2902 /* Model */,
 				0EB316E626F3D233001A2902 /* ViewModel */,
-				0EB316EB26F3D581001A2902 /* View */,
 			);
-			path = Magic8Ball;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		0EB316E126F3CA67001A2902 /* Model */ = {
@@ -93,6 +93,14 @@
 				0E99BB0F26F381F40026CEB7 /* main.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0EB3172326F3D7AA001A2902 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				0EB316EB26F3D581001A2902 /* View */,
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
