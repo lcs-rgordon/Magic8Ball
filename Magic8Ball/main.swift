@@ -41,7 +41,7 @@ switch value {
     
 // Affirmative answers
 case 1:
-    response = "It is certain"
+    response = "It is certain."
 case 2:
     response = "It is decidely so."
 case 3:
