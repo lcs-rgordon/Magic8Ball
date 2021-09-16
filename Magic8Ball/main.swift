@@ -7,6 +7,9 @@
 
 import Foundation
 
+// Make an instance of the view model to store questions and advice
+var advisor = AdviceViewModel()
+
 // Program name
 print("MAGIC 8 BALL")
 print("============")
@@ -28,11 +31,5 @@ print("")
 print("You said: \(input)")
 print("")
 
-// Start a new advice session
-var currentSession = Session(question: input)
-
-// Get advice for the question given
-currentSession.response = Magic8Ball.getResponse()
-
 // Show the advice
-print(currentSession.response)
+print(advisor.provideResponseFor(givenQuery: input))

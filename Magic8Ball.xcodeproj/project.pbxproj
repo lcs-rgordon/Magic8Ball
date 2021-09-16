@@ -10,6 +10,7 @@
 		0E99BB1026F381F40026CEB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99BB0F26F381F40026CEB7 /* main.swift */; };
 		0EB316E326F3CA72001A2902 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB316E226F3CA72001A2902 /* Session.swift */; };
 		0EB316E526F3CA80001A2902 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB316E426F3CA80001A2902 /* Magic8Ball.swift */; };
+		0EB316EA26F3D29D001A2902 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB316E926F3D29D001A2902 /* AdviceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		0E99BB0F26F381F40026CEB7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0EB316E226F3CA72001A2902 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0EB316E426F3CA80001A2902 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
+		0EB316E926F3D29D001A2902 /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB316E126F3CA67001A2902 /* Model */,
+				0EB316E626F3D233001A2902 /* ViewModel */,
 				0E99BB0F26F381F40026CEB7 /* main.swift */,
 			);
 			path = Magic8Ball;
@@ -74,6 +77,14 @@
 				0EB316E426F3CA80001A2902 /* Magic8Ball.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0EB316E626F3D233001A2902 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EB316E926F3D29D001A2902 /* AdviceViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB316EA26F3D29D001A2902 /* AdviceViewModel.swift in Sources */,
 				0EB316E326F3CA72001A2902 /* Session.swift in Sources */,
 				0E99BB1026F381F40026CEB7 /* main.swift in Sources */,
 				0EB316E526F3CA80001A2902 /* Magic8Ball.swift in Sources */,
