@@ -51,6 +51,15 @@ Questions should be phrased in such that they can be answered with a yes or no r
             // Advice given
             Text(output)
             
+            // Show the list of questions and responses
+            List(advisor.sessions.reversed()) { session in
+                VStack(alignment: .leading) {
+                    Text(session.question)
+                        .bold()
+                    Text(session.response)
+                }
+            }
+                        
             Spacer()
         }
         .padding()
