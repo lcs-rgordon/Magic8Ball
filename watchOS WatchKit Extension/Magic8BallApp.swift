@@ -9,11 +9,34 @@ import SwiftUI
 
 @main
 struct Magic8BallApp: App {
+
+    // Make an instance of the view model to store questions and advice
+    @StateObject private var advisor = AdviceViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
+            
+            TabView {
+
+                NavigationView {
+                    ContentView(advisor: advisor)
+                }
+                .tabItem {
+                    Image(systemName: "questionmark.circle")
+                    Text("Ask")
+                }
+
+                NavigationView {
+                    HistoryView(advisor: advisor)
+                }
+                .tabItem {
+                    Image(systemName: "clock.fill")
+                    Text("History")
+                }
+
             }
+
+            
         }
     }
 }

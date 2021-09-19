@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
 
     // Make an instance of the view model to store questions and advice
-    @StateObject private var advisor = AdviceViewModel()
+    @ObservedObject var advisor: AdviceViewModel
 
     // Stores the current question being asked
     @State private var input = ""
@@ -24,7 +24,7 @@ struct ContentView: View {
             TextField("Question",
                       text: $input,
                       prompt: Text("Ask a question"))
-            
+
             // Get advice
             Button(action: {
                 print("Shake button was pressed")
@@ -36,13 +36,16 @@ struct ContentView: View {
             // Advice given
             Text(output)
                 .multilineTextAlignment(.center)
+                // Multiple lines as needed
+                .fixedSize(horizontal: false, vertical: true)
             
         }
+        .navigationTitle("Magic 8 Ball")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(advisor: AdviceViewModel())
     }
 }
